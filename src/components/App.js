@@ -1,9 +1,11 @@
-import './App.scss';
+import '../styles/App.scss';
+import Header from './Header';
 
 function App() {
   return (
     <div>
-      Gówno
+      <Header />
+
     </div>
   );
 }

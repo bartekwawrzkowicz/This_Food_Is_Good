@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;1,500&family=Allison&display=swap');
+
+$logo-font: Allison, cursive;
+$main-font: Alegreya Sans, sans-serif;
+$main-font-color: rgba(0, 0, 0, 0.733);
+
+.header {
+    height: 30vh;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 46, 46, 0.685)), to(rgba(255, 254, 254, 0.664))), url(../images/bg-image.jpeg);
+    background-image: linear-gradient(rgba(226, 226, 226, 0.274), rgba(84, 58, 102, 0.679)), url(../images/bg-image.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.header-main {
+    
+}
+
+.header-main__logo {
+    font-family: $logo-font;
+    color: white;
+    font-size: 16rem;
+    text-shadow: 2px 2px 2px $main-font-color;
+}
+
+.header-main__nav a {
+   text-decoration: none;
+   text-transform: uppercase;
+   color: white;
+   font-size: 1.5rem;
+    float: right;
+    padding-right: 36px;
+    cursor: pointer;
+}
+
+.header-main__nav a:hover {
+    text-shadow: 1px 1px 1px $main-font-color;
+    font-weight: 600;  
+    transition: 1s;
+ }
+
