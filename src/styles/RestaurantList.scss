@@ -1,0 +1,93 @@
+@import 'mixins';
+@import 'config';
+
+.restaurant-heading {
+    margin-top: 50px;
+    
+    &__title,
+    &__text,
+    &__www {
+        font-size: 1.5rem;
+
+        @include mobile {
+            font-size: 1.3rem;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 50px;
+    }
+
+    &__header {
+        color: $green-color-dark;
+        font-size: 3.3rem;
+        padding: 50px 0 5px 0;
+        cursor: pointer;
+        transition: 1s;
+    
+        @include mobile {
+            font-size: 1.6rem;
+            padding: 0 0 10px 0;
+        }
+    
+        &:hover {
+            color: $green-color-medium;
+            transform: translateY(-3px);
+            transition: 1s;
+        }
+    }
+
+    &__www {
+        color: $green-color-dark;
+        margin-top: -10px;
+    }
+}
+
+.restaurant-footer__info-text {
+    font-size: 2rem;
+    margin: 40px 50px 30px 50px;
+
+    @include mobile {
+        font-size: 1.3rem;
+        margin: 20px;
+    }
+}
+
+.restaurant-block {
+    display: flex;
+
+    @include mobile {
+        display: block;
+    }
+
+    &__images img {
+        height: 600px;
+        width: auto;
+        border: 1px solid $green-color-dark;
+        margin: 40px;
+    
+        @include mobile {
+            width: 260px;
+            height: auto;
+            margin: 20px 0 auto 0;
+        }
+    }
+
+    &__info {
+        font-size: 2rem;
+        margin: 20% 40px;
+    
+        @include mobile {
+            font-size: 1.3rem;
+            margin: 10px 20px 20px 20px;
+        }
+    }
+}
+
+.restaurant-footer__symbol {
+    margin: 10px 0 100px auto;
+}
+
+.non-active {
+    display: none;
+}

@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;1,500&family=Allison&display=swap');
 
-$primary-violet-color: #915FDA;
-$html-background-color: rgba(255, 255, 255, 0.863);
-$main-font-color: rgba(0, 0, 0, 0.733);
-
 $logo-font: Allison, cursive;
+$header-font: Allison, cursive;
 $main-font: Alegreya Sans, sans-serif;
+
+$html-background-color: #d3d3d352;
+$main-font-color: rgba(0, 0, 0, 0.733);
+$footer-font-color: #eeeeeee8;
+$icons-green-color: #033b10d2;
+$nav-active-green-color: #033b10d2;
+
+$green-color-dark: #014707;
+$green-color-medium: #048d38;
+$green-color-light: #80ec76;
 
 * {
     margin: 0;
@@ -14,11 +21,18 @@ $main-font: Alegreya Sans, sans-serif;
     box-sizing: border-box;
 }
 
-body,
-html {
+html,
+body {
     font-family: $main-font;
     text-align: center;
-    background-color: $html-background-color;
     color: $main-font-color;
 }
 
+html {
+    background-color: $html-background-color;
+}
+
+.row {
+    max-width: 1480px;
+    margin: 0 auto;
+}

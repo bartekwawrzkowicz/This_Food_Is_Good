@@ -1,0 +1,30 @@
+@import 'breakpoints';
+
+// Extra small mobile devices
+@mixin extra-small-mobile {
+    @media (max-width: #{$extra-small-mobile-max}) {
+        @content;
+    }
+}
+
+// Small devices
+@mixin small-mobile {
+    @media (max-width: #{$small-mobile-max}) {
+        @content;
+    }
+}
+
+// Large mobile devices
+@mixin mobile {
+    @media (max-width: #{$mobile-screen-max}) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin tablet {
+    @media (max-width: #{$tablet-screen-max}) {
+        @content;
+    }
+ }
+ 

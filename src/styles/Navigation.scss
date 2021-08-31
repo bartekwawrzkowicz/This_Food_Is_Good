@@ -1,0 +1,40 @@
+@import 'config';
+@import 'mixins';
+
+.main-nav__list {
+    display: flex;
+    float: right;
+    list-style: none;
+}
+
+.main-nav__list a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 1.5rem;
+
+    @include extra-small-mobile {
+        font-size: .45rem;
+    }
+
+    @include small-mobile {
+        font-size: .65rem;
+    }
+
+    @include mobile {
+        font-size: 1rem;
+    }
+
+    &.active {
+        border-bottom: 2px solid $nav-active-green-color;
+        transform: translateY(0);
+    }
+ }
+
+.main-nav__list li:hover {
+    transform: translateY(-2px);  
+    transition: 1s;
+}
+

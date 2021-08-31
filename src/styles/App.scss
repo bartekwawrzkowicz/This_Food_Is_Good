@@ -1,0 +1,17 @@
+@import 'mixins';
+
+.app {
+    height: 100vh;
+}
+
+.main-header {
+    height: 30vh;
+}
+
+.main-page {
+    min-height: 65vh;
+}
+
+.main-footer {
+    height: 5vh;
+}
