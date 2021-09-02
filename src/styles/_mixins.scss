@@ -1,30 +1,29 @@
 @import 'breakpoints';
 
-// Extra small mobile devices
-@mixin extra-small-mobile {
-    @media (max-width: #{$extra-small-mobile-max}) {
-        @content;
-    }
-}
-
-// Small devices
-@mixin small-mobile {
+// Small and medium mobile
+@mixin mobile {
     @media (max-width: #{$small-mobile-max}) {
         @content;
     }
 }
 
 // Large mobile devices
-@mixin mobile {
-    @media (max-width: #{$mobile-screen-max}) {
+@mixin large-mobile {
+    @media (min-width: #{$mobile-screen-min}) and (max-width: #{$mobile-screen-max}) {
         @content;
     }
  }
  
  // Medium devices
- @mixin tablet {
-    @media (max-width: #{$tablet-screen-max}) {
+ @mixin netbook {
+    @media (min-width: #{$netbook-screen-min}) and (max-width: #{$netbook-screen-max}) {
         @content;
     }
  }
  
+// Height for netbooks, mobile and tablets (widescreen)
+@mixin widescreen {
+    @media (max-height: #{$netbook-height-max}) {
+        @content;
+    }
+}

@@ -5,13 +5,25 @@
 }
 
 .main-header {
-    height: 30vh;
+    min-height: 30%;
+
+    /* @include widescreen {
+        height: auto;
+    } */
 }
 
 .main-page {
-    min-height: 65vh;
+    min-height: 65%;
+
+    /* @include widescreen {
+        height: auto;
+    } */
 }
 
 .main-footer {
-    height: 5vh;
+    min-height: 5%;
+
+    /* @include widescreen {
+        height: auto;
+    } */
 }

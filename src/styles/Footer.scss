@@ -5,17 +5,23 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     height: auto;
     width: 100%;
 }
 
 .footer {
-    background-color: $green-color-dark;   
+    background-color: $green-color-dark; 
+    
+    /* @include widescreen {
+        max-height: auto;
+    } */
 }
 
 .footer-logo img {
     height: 64px;
-    margin-top: 5%;
+    margin-right: 2rem;
+    padding-top: 5px;
     cursor: pointer;
     transition: 1s;
 
@@ -24,55 +30,41 @@
         transition: 1s;
     }
 
-    @include extra-small-mobile {
+    @include mobile {
         height: 32px;
     }
 
-    @include small-mobile {
-        height: 46px;
-    }
+    /* @include widescreen {
+        height: 48px;
+    } */
 
-    @include mobile {
-
-    }
-
-    @include tablet {
-
-    }
+    
 }
 
 .footer-info__paragraph {
     color: $footer-font-color;
     font-size: 1.3rem;
     line-height: 1.2;
-    padding-top: 2%;
 
-    @include extra-small-mobile {
-        font-size: .4rem;
-        line-height: normal;
-        padding-top: 10px;
-    }
-
-    @include small-mobile {
-        font-size: .5rem;
-        line-height: normal;
-        padding-top: 24px;
+    & p {
+        width: fit-content;
     }
 
     @include mobile {
+        font-size: .45rem;
+    }
+
+    @include large-mobile {
         font-size: .8rem;
-        line-height: normal;
-        padding-top: 12px;
     }
 
-    @include tablet {
-
-    }
+    /* @include widescreen {
+        font-size: 1rem;
+    } */
 }
 
 .footer-icons img {
-    margin-top: 20%;
-    padding-right: 20px;
+    margin-left: 2rem;
     height: 30px;
     transition: .5s;
 
@@ -82,22 +74,13 @@
         transition: .5s;
     }
 
-    @include extra-small-mobile {
-        height: 14px;
-        padding-right: 8px;
-    }
-
-    @include small-mobile {
-        height: 16px;
-        padding-right: 10px;
-    }
-
     @include mobile {
+        height: 16px;
+        margin-left: .7rem;
+    }
+
+    /* @include widescreen {
         height: 24px;
-        padding-right: 16px;
-    }
+    } */
 
-    @include tablet {
-
-    }
 }

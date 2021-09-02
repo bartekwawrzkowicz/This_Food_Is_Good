@@ -1,11 +1,13 @@
-// Smallest phones (landscape view)
-$extra-small-mobile-max: 359px; 
-
 // Small mobile phones (landscape view)
 $small-mobile-max: 576px; 
 
-// Small tablets and large smartphones (landscape view)
+// Large smartphones (landscape view)
+$mobile-screen-min: 577px;
 $mobile-screen-max: 766px;
 
-// Small tablets (portrait view)
-$tablet-screen-max: 992px;
+// netbook (portrait view)
+$netbook-screen-min: 767px;
+$netbook-screen-max: 1200px;
+
+// netbook (height)
+$netbook-height-max: 700px;

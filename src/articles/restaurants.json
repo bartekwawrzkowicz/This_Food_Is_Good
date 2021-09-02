@@ -9,9 +9,10 @@
         "text": "Restauracja jest położona niedaleko skalistego wybrzeża przy małouczęszczanej drodze dojazdowej do Hotelu Cynthiana Beach. Personel jest bardzo pomocny, a regionalne produkty, z których przygotowane są potrawy, są świeże. Mieliśmy wrażenie, że ryba, którą właśnie nam zaserwowano, została przed sekundą złowiona. Do tego zimne piwo i schłodzone lokalne białe wytrawne wino.",
         "first_dish": "Grillowany grecki ser Halloumi podany z ciepłym regionalnym pieczywem pita",
         "second_dish": "Grillowany leszcz podany z frytkami z miejscowych ziemniaków oraz skromną sałatką",
-        "third_dish": "",
+        "third_dish": "Risotto z krewetkami, kalmarami oraz czarnymi muszlami",
         "images_first_dish": "/food-images/sunset_breeze_cyprus/grilled_halloumi.jpeg",
         "images_second_dish": "/food-images/sunset_breeze_cyprus/grilled_sea_bream.jpeg",
+        "images_third_dish": "/food-images/sunset_breeze_cyprus/seafood_risotto.jpeg",
         "recommendation": "9"
     },
     {
@@ -107,5 +108,37 @@
         "images_second_dish": "/food-images/aloha_poke/poke_bowl.jpeg",
         "images_third_dish": "",
         "recommendation": "9"
+    },
+    {
+        "id": 8,
+        "name": "Merkado 31",
+        "town": "North Miami Beach",
+        "address": "1127 NE 163 St, FL 33162",
+        "country": "USA",
+        "www": "www.merkado31.com",
+        "text": "Wydawać by się mogło, że będzie to bardzo zaciszne i kameralne miejsce. Niestety przez pyszne, regionalne peruwiańskie potrawy wewnątrz restauracji panował zgiełk niemal jak na dworcu kolejowym w Limie.",
+        "first_dish": "Pescado a la Chorrillana - chrupiąca ryba z karmelizowanymi warzywami oraz ryżem",
+        "second_dish": "Lomo Saltado - polędwica wołowa flambirowana w chińskim woku",
+        "third_dish": "",
+        "images_first_dish": "/food-images/merkado_31/pescado.jpeg",
+        "images_second_dish": "/food-images/merkado_31/lomo_saltado.jpeg",
+        "images_third_dish": "",
+        "recommendation": "8"
+    },
+    {
+        "id": 9,
+        "name": "Chéen-huaye",
+        "town": "North Miami",
+        "address": "15400 Biscayne Blvd, Aventura, FL",
+        "country": "USA",
+        "www": "www.cheenhuaye.com",
+        "text": "Najlepsza Meksykańska restauracja według Miami New Times. Podpisujemy się pod tym stwierdzeniem czterema rękami. Chef pochodzi z Yucatán Peninsula w Meksyku i wraz żoną prowadzą tę restaurację podając potrawy, o których prędko się nie zapomina.",
+        "first_dish": "Sopa de Aguacate - wywar z kurczaka z pico de gallo (pomidorową salsą), kolendrą i avocado",
+        "second_dish": "Cochinita Pibil - marynowana w arnocie i liściach bananowych szarpana wieprzowina podana z ryżem i pieczoną czarną fasolą",
+        "third_dish": "Molcajete Marinero - Mahi Mahi (ryba koryfena z makrelowatych) z krewetkami, białym serem, grillowaną dymką i sosem guaillo",
+        "images_first_dish": "/food-images/cheen_huaye/sopa_de_aguacate.jpeg",
+        "images_second_dish": "/food-images/cheen_huaye/cochinita_pibil.jpeg",
+        "images_third_dish": "/food-images/cheen_huaye/molcajete_marinero.jpeg",
+        "recommendation": "10"
     }
 ]

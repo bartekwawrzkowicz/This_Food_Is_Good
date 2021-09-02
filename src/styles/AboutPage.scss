@@ -1,47 +1,6 @@
 @import 'config';
 @import 'mixins';
 
-/* .homepage-column {
-    display: flex;
-
-    @include mobile {
-        display: block;
-    }
-}
-
-.homepage-text {
-    position: flex;
-    font-size: 1.5rem;
-    background-color: white;
-    border: 1px solid $green-color-dark;
-    width: 600px;
-    max-height: auto;
-    padding: 5% 5%;
-    margin: 3% 100px;
-
-    @include mobile {
-        font-size: 1.1rem;
-        max-width: 300px;
-        padding: 4%;
-        margin: 0 auto;
-        
-    }
-}
-
-.homepage-image img {
-    position: flex;
-    filter: grayscale(70%);
-    border: 1px solid $green-color-dark;
-    width: 600px;
-    height: auto;
-    margin: 30% 100px auto 0;
-
-    @include mobile {
-        max-width: 300px;
-        margin: 10% 0 10% 0;
-    }
-} */
-
 .homepage-column {
     display: flex;
     justify-content: space-around;
@@ -51,6 +10,14 @@
     @include mobile {
         flex-direction: column;
     }
+
+    @include large-mobile {
+        flex-direction: column;
+    }
+
+    @include netbook {
+        flex-direction: column;
+    }
 }
 
 .homepage-column div {
@@ -58,8 +25,18 @@
     width: 600px;
 
     @include mobile {
-        margin: 20px;
-        width: 300px;
+        margin: 30px;
+        width: auto;
+    }
+
+    @include large-mobile {
+        margin: 50px 30px 0 30px;
+        width: auto;
+    }
+
+    @include netbook {
+        margin: 30px 70px 0 70px;
+        width: auto;
     }
 }
 
@@ -73,6 +50,16 @@
         font-size: 1rem;
         padding: 20px;
     }
+
+    @include large-mobile {
+        font-size: 1.3rem;
+        padding: 20px;
+    }
+
+    @include netbook {
+        font-size: 1.5rem;
+        padding: 30px;
+    }
 }
 
 .homepage-image img {
@@ -83,4 +70,10 @@
     @include mobile {
         max-width: 300px;
     }
+
+    @include large-mobile {
+        max-width: 500px;
+        margin-bottom: 30px;
+    }
+
 }

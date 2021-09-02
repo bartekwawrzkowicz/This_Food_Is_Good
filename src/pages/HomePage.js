@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Icons from '../layouts/Icons';
+import Home from '../layouts/Home';
 
 const HomePage = () => {
     return (
         <div className="home-main row">
-            <Icons />
+            <Home />
         </div>
     )
 }

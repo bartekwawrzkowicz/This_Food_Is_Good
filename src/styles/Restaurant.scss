@@ -3,6 +3,14 @@
 
 .restaurant-heading {
     margin-top: 50px;
+
+    @include mobile {
+        margin-top: 20px;
+    }
+
+    @include large-mobile {
+        margin-top: 40px;
+    }
     
     &__title,
     &__text,
@@ -10,7 +18,11 @@
         font-size: 1.5rem;
 
         @include mobile {
-            font-size: 1.3rem;
+            font-size: 1rem;
+        }
+
+        @include large-mobile {
+            font-size: 1.4rem;
         }
     }
 
@@ -28,6 +40,11 @@
         @include mobile {
             font-size: 1.6rem;
             padding: 0 0 10px 0;
+        }
+
+        @include large-mobile {
+            font-size: 2.2rem;
+            padding: 30px 0 0 0;
         }
     
         &:hover {
@@ -51,12 +68,26 @@
         font-size: 1.3rem;
         margin: 20px;
     }
+
+    @include large-mobile {
+        font-size: 1.5rem;
+        margin: 20px;
+    }
+
 }
 
 .restaurant-block {
     display: flex;
 
     @include mobile {
+        display: block;
+    }
+
+    @include large-mobile {
+        display: block;
+    }
+
+    @include netbook {
         display: block;
     }
 
@@ -71,6 +102,16 @@
             height: auto;
             margin: 20px 0 auto 0;
         }
+
+        @include large-mobile {
+            width: 360px;
+            height: auto;
+            margin: 20px 0 auto 0;
+        }
+
+        @include netbook {
+        
+        }
     }
 
     &__info {
@@ -80,6 +121,16 @@
         @include mobile {
             font-size: 1.3rem;
             margin: 10px 20px 20px 20px;
+        }
+
+        @include large-mobile {
+            font-size: 1.8rem;
+            margin: 20px 30px 30px 30px;
+        }
+
+        @include netbook {
+            font-size: 1.5rem;
+            margin: 20px 30px 30px 30px;
         }
     }
 }

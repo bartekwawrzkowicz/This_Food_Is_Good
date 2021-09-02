@@ -8,6 +8,22 @@
     background-size: cover;
     background-position: center;
 
+    @include mobile {
+        height: auto;
+    }
+
+    @include large-mobile {
+        height: auto;
+    }
+
+    @include netbook {
+        height: auto;
+    }
+
+    /* @include widescreen {
+        height: auto;
+    } */
+
     &-main__logo {
         display: flex;
         justify-content: center;
@@ -16,26 +32,31 @@
         font-size: 16rem;
         text-shadow: 2px 2px 2px $main-font-color;
 
-        @include extra-small-mobile {
-            font-size: 3.5rem;
-            padding: 30px 0 20px 0;
-        }
-
-        @include small-mobile {
-            font-size: 5rem;
-            padding: 40px 0 20px 0;
-        }
-
         @include mobile {
+            font-size: 4rem;
+            padding: 10% 0;
+            margin-top: 10px;
+        }
+    
+        @include large-mobile {
             font-size: 6rem;
-            padding: 30px 0 10px 0;
+            padding: 5% 0;
+            margin-top: 10px;
+        }
+    
+        @include netbook {
+            font-size: 8rem;
+            padding: 5% 0;
+            margin-top: 10px;
         }
 
-        @include tablet {
-            font-size: 7.5rem;
-            padding: 50px 0 30px 0;
-        }
+        /* @include widescreen {
+            font-size: 6.5rem;
+            letter-spacing: .3rem;
+        } */
+    }
 
+    &-main__nav {
+        margin-bottom: 10%;
     }
 }
-

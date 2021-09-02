@@ -1,5 +1,25 @@
-.recommendations-under-construction {
+@import 'config';
+@import 'mixins';
+
+.construction-column {
     display: flex;
-    flex-direction: column;
-    margin: 20%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+    width: auto;
+
+    @include mobile {
+        flex-direction: column;
+        width: auto;
+    }
+
+    @include large-mobile {
+        flex-direction: column;
+        width: auto;
+    }
+}
+
+.recommendations-text {
+    font-size: 30px;
 }

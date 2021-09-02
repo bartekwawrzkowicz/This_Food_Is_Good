@@ -18,7 +18,7 @@ const Page = () => {
                 <Route path="/restaurants" component={RestaurantPage} />
                 <Route path="/recommendations" component={RecommendationsPage} />
                 <Route path="/contact" component={ContactPage} />
-                <Route path="/error" component={ErrorPage} />
+                <Route component={ErrorPage} />
             </Switch>
         </>
     );
