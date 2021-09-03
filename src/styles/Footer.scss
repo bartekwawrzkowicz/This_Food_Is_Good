@@ -41,13 +41,16 @@
     
 }
 
-.footer-info__paragraph {
+.footer-info {
+
+    &__paragraph,
+    &__second-paragraph {
     color: $footer-font-color;
     font-size: 1.3rem;
     line-height: 1.2;
 
     & p {
-        width: fit-content;
+        width: auto;
     }
 
     @include mobile {
@@ -62,25 +65,4 @@
         font-size: 1rem;
     } */
 }
-
-.footer-icons img {
-    margin-left: 2rem;
-    height: 30px;
-    transition: .5s;
-
-    &:hover {
-        cursor: pointer;
-        height: 34px;
-        transition: .5s;
-    }
-
-    @include mobile {
-        height: 16px;
-        margin-left: .7rem;
-    }
-
-    /* @include widescreen {
-        height: 24px;
-    } */
-
 }

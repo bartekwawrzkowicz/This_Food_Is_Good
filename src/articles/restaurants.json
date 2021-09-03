@@ -1,5 +1,14 @@
 [
     {
+        "text": {
+            "foodIconText": "Jesteśmy wielkimi miłośnikami dobrego jedzenia. Gdziekolwiek się wybieramy staramy się poznać lokalne przysmaki i smak regionalnego piwa",
+            "dogIconText": "Jesteśmy wielkimi miłośnikami psów. Posiadamy szczeniaka jamnika, który jest hybrydą krótkowłosego z szorstkowłosym i ma na imię Ryszard",
+            "instrumentIconText": "Jesteśmy muzykami i pałamy wielką pasją do grania na różnych instrumentach oraz w różnych zespołach",
+            "travelIconText": "Jesteśmy ogromnymi wielbicielami podróży. Staramy się wyjeżdżać / wylatywać kiedy to tylko możliwe i możliwie jak najdalej",
+            "contactText": "Bardzo jest nam miło, że udało Wam się dotrzeć do tej sekcji strony. Aby się z nami skontaktować wystarczy kliknąć w odpowiedni link pod zdjęciem."
+        }
+    },    
+    {
         "id": 1,
         "name": "Sunset Breeze Restaurant & Lounge",
         "town": "Kissonerga",
@@ -139,6 +148,42 @@
         "images_first_dish": "/food-images/cheen_huaye/sopa_de_aguacate.jpeg",
         "images_second_dish": "/food-images/cheen_huaye/cochinita_pibil.jpeg",
         "images_third_dish": "/food-images/cheen_huaye/molcajete_marinero.jpeg",
+        "recommendation": "10"
+    },
+    {
+        "id": 10,
+        "name": "Torquemada",
+        "town": "Palermo",
+        "address": "Via Pignatelli Aragona 64, 90141 PA",
+        "country": "Włochy",
+        "www": "www.facebook.com/torquemadapa",
+        "text": "Restauracja, a raczej Pizzeria położona jest w bocznej uliczce od placu im. Giuseppe Verdiego, na którym stoi słynny Teatro Massimo. Potrawy są smaczne, kolorowe i w przystępnej cenie.",
+        "first_dish": "Stek z miecznika podany z grillowanymi warzywami, ryżem oraz opiekanymi ziemniakami",
+        "second_dish": "Kurczak z boczkiem podany z grillowanymi warzywami, ryżem oraz opiekanymi ziemniakami",
+        "third_dish": "",
+        "images_first_dish": "/food-images/torquemada/swordfish_steak.jpeg",
+        "images_second_dish": "/food-images/torquemada/chicken.jpeg",
+        "images_third_dish": "",
+        "recommendation": "7"
+    },
+    {
+        "id": 11,
+        "name": "Restauracja Babinicz",
+        "town": "Szczawno-Zdrój",
+        "address": "Al. Spacerowa 22, 58-310 Szczawno-Zdrój",
+        "country": "Polska",
+        "www": "www.dworzysko.pl",
+        "text": "Bez wątpienia jest to restauracja na najwyższym poziomie. Mamy tu na myśli nie tylko obsługę, lokalizację, wystrój ale przede wszystkim autorską kuchnię opartą nie tylko na dziczyźnie. Autorskie menu sezonowe chefa Rafała Grzegorzka zaskakuje za każdym razem. Potrawy skomponowane są w sposób mistrzowski z najwyższej jakości produktów. Mieliśmy spory problem aby przedstawić Wam nasze ulubione potrawy.",
+        "first_dish": "Śledź holenderski z żółtym burakiem, serem Podchmielonym i sosem z selera naciowego",
+        "second_dish": "Pierś z perliczki z topinamburem, marchewką, pieczarką confit i sosem limonkowym",
+        "third_dish": "Mini pączki z mrożonymi owocami, sosem z białej czekolady i pędami świerku",
+        "fourth_dish": "",
+        "fifth_dish": "",
+        "images_first_dish": "/food-images/dworzysko/fish.jpeg",
+        "images_second_dish": "/food-images/dworzysko/breast.jpeg",
+        "images_third_dish": "/food-images/dworzysko/dessert_mini.jpeg",
+        "images_fourth_dish": "/food-images/dworzysko/4.jpeg",
+        "images_fifth_dish": "/food-images/dworzysko/5.jpeg",
         "recommendation": "10"
     }
 ]

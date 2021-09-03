@@ -1,0 +1,74 @@
+@import 'config';
+@import 'mixins';
+
+.contact-main {
+    @include page-column;
+}
+
+.contact-main div {
+    @include page-column-div;
+}
+
+.contact-text {
+    @include page-text;
+}
+
+.contact-image img {
+    @include page-image;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 30px;
+
+    &__name {
+        color: $green-color-dark;
+    }
+
+    @include mobile {
+        font-size: 20px;
+    }
+
+    &__social-link { 
+
+        & img {
+            width: 40px;
+            margin-left: 20px;
+            transition: 1s;
+            cursor: pointer;
+
+            @include mobile {
+                width: 1.5rem; 
+                margin-left: 10px;
+            }
+
+            &:hover {
+                color: $green-color-dark;
+                transform: translateY(-3px);
+                transition: 1s;
+            }
+        }
+
+
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+.first-column {
+    flex-direction: row;
+    width: auto;
+}
+
+.second-column {
+    flex-direction: row;
+    min-width: 320px;
+}

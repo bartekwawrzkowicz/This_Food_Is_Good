@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import restaurantData from '../../articles/restaurants.json';
-
 import Button from '../../layouts/Button';
 
 import '../../styles/Restaurant.scss';
@@ -19,7 +18,7 @@ const RestaurantList = props => {
                 <h1 className="restaurant-heading__header" onClick={activeHandler}>{restaurantData[props.number].name}</h1>
                 <p className="restaurant-heading__www">{restaurantData[props.number].www}</p>
                 <h2 className="restaurant-heading__title">{restaurantData[props.number].address}</h2>
-                <p className="restaurant-heading__text">{restaurantData[props.number].town}, {restaurantData.country}</p>
+                <p className="restaurant-heading__text">{restaurantData[props.number].town}, {restaurantData[props.number].country}</p>
 
                 <div className={nonActive ? "restaurant-content row non-active" : "restaurant-content row"}>
                     <div className="restaurant-block">
@@ -49,6 +48,30 @@ const RestaurantList = props => {
                         {restaurantData[props.number].third_dish ?
                             <div className="restaurant-block__info">
                                 <p>{restaurantData[props.number].third_dish}</p>
+                            </div> : null}
+                    </div>
+
+                    <div className="restaurant-block">
+                        <div className="restaurant-block__images">
+                            {restaurantData[props.number].images_fourth_dish ?
+                                <img src={restaurantData[props.number].images_fourth_dish
+                                } alt="fourth-dish" /> : null}
+                        </div>
+                        {restaurantData[props.number].fourth_dish ?
+                            <div className="restaurant-block__info">
+                                <p>{restaurantData[props.number].fourth_dish}</p>
+                            </div> : null}
+                    </div>
+
+                    <div className="restaurant-block">
+                        <div className="restaurant-block__images">
+                            {restaurantData[props.number].images_fifth_dish ?
+                                <img src={restaurantData[props.number].images_fifth_dish
+                                } alt="fifth-dish" /> : null}
+                        </div>
+                        {restaurantData[props.number].fifth_dish ?
+                            <div className="restaurant-block__info">
+                                <p>{restaurantData[props.number].fifth_dish}</p>
                             </div> : null}
                     </div>
 

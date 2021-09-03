@@ -26,9 +26,9 @@
         }
     }
 
-    &:last-child {
-        margin-bottom: 50px;
-    }
+    &__text {
+            margin-bottom: 50px;
+        }
 
     &__header {
         color: $green-color-dark;
@@ -109,9 +109,6 @@
             margin: 20px 0 auto 0;
         }
 
-        @include netbook {
-        
-        }
     }
 
     &__info {

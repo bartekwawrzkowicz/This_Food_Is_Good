@@ -5,7 +5,6 @@ import Restaurant from '../components/restaurants/RestaurantList';
 const RestaurantPage = () => {
     return (
         <>
-            <Restaurant number={0} />
             <Restaurant number={1} />
             <Restaurant number={2} />
             <Restaurant number={3} />
@@ -14,6 +13,9 @@ const RestaurantPage = () => {
             <Restaurant number={6} />
             <Restaurant number={7} />
             <Restaurant number={8} />
+            <Restaurant number={9} />
+            <Restaurant number={10} />
+            <Restaurant number={11} />
         </>
     )
 }
