@@ -22,4 +22,16 @@
 
 .recommendations-text {
     font-size: 30px;
+
+    @include mobile {
+        font-size: 24px;
+    }
+}
+
+.recommendations-under-construction img {
+    max-width: fit-content;
+
+    @include mobile {
+        max-width: 240px;
+    }
 }

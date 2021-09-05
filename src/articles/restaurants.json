@@ -1,11 +1,12 @@
 [
     {
+        "id": "0",
         "text": {
             "foodIconText": "Jesteśmy wielkimi miłośnikami dobrego jedzenia. Gdziekolwiek się wybieramy staramy się poznać lokalne przysmaki i smak regionalnego piwa",
             "dogIconText": "Jesteśmy wielkimi miłośnikami psów. Posiadamy szczeniaka jamnika, który jest hybrydą krótkowłosego z szorstkowłosym i ma na imię Ryszard",
             "instrumentIconText": "Jesteśmy muzykami i pałamy wielką pasją do grania na różnych instrumentach oraz w różnych zespołach",
             "travelIconText": "Jesteśmy ogromnymi wielbicielami podróży. Staramy się wyjeżdżać / wylatywać kiedy to tylko możliwe i możliwie jak najdalej",
-            "contactText": "Bardzo jest nam miło, że udało Wam się dotrzeć do tej sekcji strony. Aby się z nami skontaktować wystarczy kliknąć w odpowiedni link pod zdjęciem."
+            "contactText": "Jest nam bardzo miło, że udało Wam się dotrzeć do tej sekcji strony. Aby się z nami skontaktować wystarczy kliknąć w odpowiedni link pod zdjęciem."
         }
     },    
     {
@@ -15,7 +16,7 @@
         "address": "35 Mosfilion Street",
         "country": "Cypr",
         "www": "www.sunsetbreeze.net",
-        "text": "Restauracja jest położona niedaleko skalistego wybrzeża przy małouczęszczanej drodze dojazdowej do Hotelu Cynthiana Beach. Personel jest bardzo pomocny, a regionalne produkty, z których przygotowane są potrawy, są świeże. Mieliśmy wrażenie, że ryba, którą właśnie nam zaserwowano, została przed sekundą złowiona. Do tego zimne piwo i schłodzone lokalne białe wytrawne wino.",
+        "text": "Restauracja jest położona niedaleko skalistego wybrzeża przy mało uczęszczanej drodze dojazdowej do Hotelu Cynthiana Beach. Personel jest bardzo pomocny, a regionalne produkty, z których przygotowane są potrawy, są świeże. Mieliśmy wrażenie, że ryba, którą właśnie nam zaserwowano, została przed sekundą złowiona. Do tego zimne piwo i schłodzone lokalne białe wytrawne wino.",
         "first_dish": "Grillowany grecki ser Halloumi podany z ciepłym regionalnym pieczywem pita",
         "second_dish": "Grillowany leszcz podany z frytkami z miejscowych ziemniaków oraz skromną sałatką",
         "third_dish": "Risotto z krewetkami, kalmarami oraz czarnymi muszlami",
@@ -136,7 +137,7 @@
     },
     {
         "id": 9,
-        "name": "Chéen-huaye",
+        "name": "Chéen-Huaye",
         "town": "North Miami",
         "address": "15400 Biscayne Blvd, Aventura, FL",
         "country": "USA",
@@ -185,5 +186,25 @@
         "images_fourth_dish": "/food-images/dworzysko/4.jpeg",
         "images_fifth_dish": "/food-images/dworzysko/5.jpeg",
         "recommendation": "10"
+    },
+    {
+        "id": 12,
+        "name": "Kącik Zbójnicki",
+        "town": "Wisła",
+        "address": "43, 1 Maja, 43-460 Wisła",
+        "country": "Polska",
+        "www": "www.kacikzbojnicki.pl",
+        "text": "Restauracja mieści się w samym sercu Wisły, przy głównym deptaku. Jest to kameralne miejsce, w którym bogate menu pozwoli każdemu miłośnikowi dobrej kuchni znaleźć coś dla siebie.",
+        "first_dish": "Chleb z domowym smalcem i ogórkiem kiszonym",
+        "second_dish": "Pierogi ruskie",
+        "third_dish": "Placki góralskie z gulaszem wołowym z dodatkiem sera i ogórka kiszonego",
+        "fourth_dish": "",
+        "fifth_dish": "",
+        "images_first_dish": "/food-images/kacik_zbojnicki/chleb_ze_smalcem.jpeg",
+        "images_second_dish": "/food-images/kacik_zbojnicki/pierogi_ruskie.jpeg",
+        "images_third_dish": "/food-images/kacik_zbojnicki/placki_goralskie.jpeg",
+        "images_fourth_dish": "",
+        "images_fifth_dish": "",
+        "recommendation": "7"
     }
 ]
