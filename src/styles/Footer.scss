@@ -10,59 +10,64 @@
     width: 100%;
 }
 
-.footer {
+.footer-block {
     background-color: $green-color-dark; 
-    
-    /* @include widescreen {
-        max-height: auto;
-    } */
-}
 
-.footer-logo img {
-    height: 64px;
-    margin-right: 2rem;
-    padding-top: 5px;
-    cursor: pointer;
-    transition: 1s;
+    &__logo {
+        width: 25%;
+    }
 
-    &:hover {
-        transform: translateX(3px);
+    &__logo img {
+        height: 64px;
+        margin-right: 2rem;
+        padding-top: 5px;
+        cursor: pointer;
         transition: 1s;
-    }
-
-    @include mobile {
-        height: 32px;
-    }
-
-    /* @include widescreen {
-        height: 48px;
-    } */
-
     
-}
-
-.footer-info {
-
-    &__paragraph,
-    &__second-paragraph {
-    color: $footer-font-color;
-    font-size: 1.3rem;
-    line-height: 1.2;
-
-    & p {
-        width: auto;
+        &:hover {
+            transform: translateX(3px);
+            transition: 1s;
+        }
+    
+        @include mobile {
+            height: 32px;
+        }        
     }
 
-    @include mobile {
-        font-size: .45rem;
-    }
+    &__info {
 
-    @include large-mobile {
-        font-size: .8rem;
-    }
+        &-first {
+            width: 50%;
+        }
 
-    /* @include widescreen {
-        font-size: 1rem;
-    } */
+        &-second {
+            width: 25%;
+        }
+
+        &-first,
+        &-second {
+        color: $footer-font-color;
+        
+    
+        & p {
+            width: auto;
+        }
+    
+        @include mobile {
+            font-size: .5rem;
+        }
+    
+        @include large-mobile {
+            font-size: .8rem;
+        }
+    
+        /* @include widescreen {
+            font-size: 1rem;
+        } */
+    }
+    }
 }
-}
+
+
+
+
