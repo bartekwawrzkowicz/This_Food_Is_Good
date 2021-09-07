@@ -1,7 +1,7 @@
 import React from 'react';
 
 import '../styles/Home.scss';
-import iconData from '../articles/restaurants.json';
+import iconData from '../articles/text.json';
 
 import foodIcon from '../icons/food.png';
 import dogIcon from '../icons/dog.png';
@@ -10,7 +10,7 @@ import travelIcon from '../icons/travel.png';
 
 const Home = () => {
 
-    const data = iconData[0].text;
+    const data = iconData.text;
 
     return (
         <>
