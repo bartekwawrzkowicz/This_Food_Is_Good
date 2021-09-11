@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+
 import '../styles/InfoBanner.scss';
 
 
@@ -18,6 +19,5 @@ const InfoBanner = () => {
     )
 
 }
-
 
 export default InfoBanner;

@@ -196,5 +196,25 @@
         "images_fourth_dish": "",
         "images_fifth_dish": "",
         "recommendation": "7"
+    },
+    {
+        "id": 13,
+        "name": "Mr D'z Route 66 Diner",
+        "town": "Kingman",
+        "address": "105 E Andy Devine Ave, Kingman, AZ 86401",
+        "country": "USA",
+        "www": "www.facebook.com/people/Mr-Dz-Route-66-Diner",
+        "text": "Restauracja mieści się przy głównej trasie nr 66 w Stanach Zjednoczonych, która to łączy oba wybrzeża. Znajdziemy tu kultowe amerykańskie potrawy, a wystrój przypomina typową knajpę z filmów. Jest to obowiązkowy punkt kulinarny w Arizonie",
+        "first_dish": "Hot Dog z frytkami",
+        "second_dish": "Kanapka z wołowiną na ostro, zapiekana serem chedar",
+        "third_dish": "",
+        "fourth_dish": "",
+        "fifth_dish": "",
+        "images_first_dish": "/food-images/mr_d_z/hot_dog.jpeg",
+        "images_second_dish": "/food-images/mr_d_z/beef_sandwich.jpeg",
+        "images_third_dish": "",
+        "images_fourth_dish": "",
+        "images_fifth_dish": "",
+        "recommendation": "7"
     }
 ]

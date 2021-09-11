@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+
 import '../styles/Navigation.scss';
 
 const list = [
@@ -9,6 +10,7 @@ const list = [
     { name: "o nas", path: "/about", },
     { name: "kontakt", path: "/contact", },
 ]
+
 
 const Navigation = () => {
 

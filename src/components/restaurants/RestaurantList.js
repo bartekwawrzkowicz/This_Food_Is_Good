@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+
 import restaurantData from '../../articles/restaurants.json';
 import Button from '../../layouts/Button';
-
 import '../../styles/Restaurant.scss';
+
 
 const RestaurantList = props => {
 
@@ -85,8 +86,6 @@ const RestaurantList = props => {
             <Button state={nonActive} click={activeHandler} />
         </>
     )
-
-
 }
 
 export default RestaurantList;

@@ -56,7 +56,7 @@
 
 @mixin page-column-div {
     flex-direction: column;
-    width: 600px;
+    width: 800px;
     margin: 10px 50px;
 
     @include mobile {
@@ -75,12 +75,13 @@
 @mixin page-text {
     font-size: 1.5rem;
     background-color: white;
-    border: 1px solid $green-color-dark;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px $green-color-medium;
     padding: 30px;
 
     @include mobile {
         font-size: 1rem;
-        padding: 20px;
+        padding: 10px;
     }
 
     @include large-mobile {
@@ -96,8 +97,10 @@
 
 @mixin page-image {
     filter: grayscale(70%);
-    border: 1px solid $green-color-dark;
-    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px $green-color-medium;
+    max-width: 800px;
+    margin: 30px;
 
     @include mobile {
         max-width: 300px;

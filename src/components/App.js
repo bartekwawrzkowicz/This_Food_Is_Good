@@ -8,6 +8,7 @@ import Page from '../layouts/Page';
 import Footer from '../layouts/Footer';
 
 function App() {
+
   return (
     <Router>
       <div className="app">
