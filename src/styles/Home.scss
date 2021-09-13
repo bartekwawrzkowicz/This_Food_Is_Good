@@ -7,10 +7,9 @@
 }
 
 .homepage-main div {
-    @include page-column-div
+    @include page-column-div 
 }
 
 .homepage-text {
    @include page-text
 }
-

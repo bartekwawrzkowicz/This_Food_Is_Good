@@ -4,8 +4,7 @@ import Restaurant from '../components/restaurants/RestaurantList';
 import InfoBanner from '../layouts/InfoBanner';
 import RestaurantDetails from '../articles/restaurants.json';
 
-const restaurantDetails = [...RestaurantDetails];
-const details = restaurantDetails.map((item, index) => {
+const details = RestaurantDetails.map((item, index) => {
     return (
         <div key={index}>
             <Restaurant number={index} />

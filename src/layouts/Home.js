@@ -13,9 +13,6 @@ const Home = () => {
             <div className="homepage-main row">
                 <div className="homepage-text">
                     {homePageHeader}
-                </div>
-
-                <div className="homepage-text">
                     {homePageMainText}
                 </div>
 
