@@ -86,7 +86,7 @@
         "www": "www.facebook.com/CudaWiankiPrzemysl",
         "text": "Kuchnia Cudów to smaki domowe, ale także kuchnia współczesna, inspirowana podróżami oraz lokalnymi i sezonowymi produktami.",
         "first_dish": "Proziaki - słynne podkarpackie chlebki podane z masłem czosnkowym i domowymi powidłami śliwkowymi",
-        "second_dish": "Królewska Zupa Rybna - łosoś, dorsz, krewetki, pomidory, pasta curry, chilli, kolendra, sezam",
+        "second_dish": "Chłodnik z przemyskich pomidorów malinowych na jogurcie i śmietance z grzankami, czosnkiem, oliwą i świeżą bazylią",
         "third_dish": "Mille Feuille - karmelizowane ciasto francuskie, waniliowy krem patissiere, domowy karmel z solą morską",
         "images_first_dish": "/food-images/cuda_wianki/proziaki.jpeg",
         "images_second_dish": "/food-images/cuda_wianki/zupa_rybna.jpeg",
@@ -216,5 +216,25 @@
         "images_fourth_dish": "",
         "images_fifth_dish": "",
         "recommendation": "7"
+    },
+    {
+        "id": 14,
+        "name": "Bohema",
+        "town": "Szczawno-Zdrój",
+        "address": "ul. Kościuszki 2c, 58-310 Szczawno-Zdrój",
+        "country": "Polska",
+        "www": "www.restauracja-bohema.pl",
+        "text": "Restauracja o długiej historii i mocno kulinarnie zakorzeniona w sercu uzdrowiska. Wyśmienite menu sezonowe, rustykalny wystrój oraz nienaganna obsługa sprawiają, że chce się tu wracać przy każdej okazji. Serwowane dania skomponowane są z niezwykłą starannością i podane bardzo estetycznie.",
+        "first_dish": "Kurczak supreme, gratine z ziemniaków i cukinii, sos śliwkowy i marynowana śliwka",
+        "second_dish": "Karkówka confit z puree ziemniaczanym, warzywami sezonowymi i sosem demi glace",
+        "third_dish": "Smażony filet z łososia norweskiego podawany z ziołowym puree ziemniaczanym, szpinakiem na maśle i dressingiem miodowo-musztardowym z kaparami",
+        "fourth_dish": "",
+        "fifth_dish": "",
+        "images_first_dish": "/food-images/bohema/chicken_supreme.jpeg",
+        "images_second_dish": "/food-images/bohema/karkowka.jpeg",
+        "images_third_dish": "/food-images/bohema/salmon.jpeg",
+        "images_fourth_dish": "",
+        "images_fifth_dish": "",
+        "recommendation": "9"
     }
 ]

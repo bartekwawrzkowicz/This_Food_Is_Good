@@ -1,4 +1,3 @@
-import { text } from 'body-parser';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -34,6 +33,11 @@ const RecommendationsPage = () => {
                         <h1 className="restaurant-heading__header">{restaurantData[5].name}</h1>
                     </Link>
                     <p className="restaurant-heading__text">{restaurantData[5].town}, {restaurantData[5].country}</p>
+
+                    <Link to={{ pathname: "https://restauracja-bohema.pl/" }} style={{ textDecoration: 'none' }} target="_blank" >
+                        <h1 className="restaurant-heading__header">{restaurantData[13].name}</h1>
+                    </Link>
+                    <p className="restaurant-heading__text">{restaurantData[13].town}, {restaurantData[13].country}</p>
 
                     <Link to={{ pathname: "https://alohapoke.eatbu.com/?lang=pl" }} style={{ textDecoration: 'none' }} target="_blank" >
                         <h1 className="restaurant-heading__header">{restaurantData[6].name}</h1>
