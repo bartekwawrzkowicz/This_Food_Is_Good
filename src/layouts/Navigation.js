@@ -1,14 +1,16 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+
 import '../styles/Navigation.scss';
 
 const list = [
     { name: "home", path: "/", exact: true },
-    { name: "o nas", path: "/about", },
     { name: "restauracje", path: "/restaurants", },
     { name: "rekomendacje", path: "/recommendations", },
+    { name: "o nas", path: "/about", },
     { name: "kontakt", path: "/contact", },
 ]
+
 
 const Navigation = () => {
 

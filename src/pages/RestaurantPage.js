@@ -1,21 +1,25 @@
 import React from 'react';
+
 import Restaurant from '../components/restaurants/RestaurantList';
+import InfoBanner from '../layouts/InfoBanner';
+import RestaurantDetails from '../articles/restaurants.json';
+
+const details = RestaurantDetails.map((item, index) => {
+    return (
+        <div key={index}>
+            <Restaurant number={index} />
+        </div>)
+})
 
 
 const RestaurantPage = () => {
+
     return (
         <>
-            <Restaurant number={1} />
-            <Restaurant number={2} />
-            <Restaurant number={3} />
-            <Restaurant number={4} />
-            <Restaurant number={5} />
-            <Restaurant number={6} />
-            <Restaurant number={7} />
-            <Restaurant number={8} />
-            <Restaurant number={9} />
-            <Restaurant number={10} />
-            <Restaurant number={11} />
+            <div className="banner-column">
+                <InfoBanner />
+            </div>
+            {details}
         </>
     )
 }

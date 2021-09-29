@@ -1,8 +1,12 @@
 import React from 'react';
+
 import '../../styles/Restaurant.scss';
 
+
 const RestaurantDetails = props => {
+
     const { state, details } = props;
+
     return (
         <>
             <div className={{ state } ? "restaurant-content row non-active" : "restaurant-content row"}>

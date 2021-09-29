@@ -1,0 +1,64 @@
+@import 'config';
+@import 'mixins';
+
+.recommendation-column {
+    @include page-column
+}
+
+.recommendation-column div {
+    @include page-column-div
+}
+
+.recommendation-text {
+    @include page-text;
+}
+
+.recommendation-heading {
+    margin-top: 50px;
+
+    @include mobile {
+        margin-top: 20px;
+    }
+
+    @include large-mobile {
+        margin-top: 40px;
+    }
+    
+    &__header {
+        color: $green-color-dark;
+        font-size: 3.3rem;
+        padding: 20px 0 5px 0;
+        cursor: pointer;
+        transition: 1s;
+        
+    
+        @include mobile {
+            font-size: 1.6rem;
+            padding: 0 0 10px 0;
+        }
+
+        @include large-mobile {
+            font-size: 2.2rem;
+            padding: 20px 0 0 0;
+        }
+    
+        &:hover {
+            color: $green-color-medium;
+            transform: translateY(-3px);
+            transition: 1s;
+        }
+    }
+
+    &__text {
+        font-size: 1.5rem;
+
+        @include mobile {
+            font-size: 1rem;
+        }
+
+        @include large-mobile {
+            font-size: 1.4rem;
+        }
+    }
+
+}

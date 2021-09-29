@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import '../styles/ContactPage.scss';
 import image1 from '../images/contact_image.jpeg';
-import contactData from '../articles/restaurants.json';
+import contactData from '../articles/text.json';
 
 import instagramLogo from '../icons/logo-instagram.svg';
 import facebookLogo from '../icons/logo-facebook.svg';
@@ -16,7 +16,7 @@ import mailLogo from '../icons/mail-open-sharp.svg';
 
 const ContactPage = () => {
 
-    const data = contactData[0].text;
+    const data = contactData.text;
 
     return (
         <>
