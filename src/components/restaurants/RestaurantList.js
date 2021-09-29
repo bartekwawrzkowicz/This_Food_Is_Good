@@ -9,81 +9,82 @@ const RestaurantList = props => {
 
     const [nonActive, setNonActive] = useState(true);
 
-    const activeHandler = () => {
+    const buttonActiveHandler = () => {
         setNonActive(!nonActive);
     }
 
     return (
         <>
-            <div className="restaurant-heading">
-                <h1 className="restaurant-heading__header" onClick={activeHandler}>{restaurantData[props.number].name}</h1>
-                <p className="restaurant-heading__www">{restaurantData[props.number].www}</p>
-                <h2 className="restaurant-heading__title">{restaurantData[props.number].address}</h2>
-                <p className="restaurant-heading__text">{restaurantData[props.number].town}, {restaurantData[props.number].country}</p>
+            <div className="restaurant">
+                <h2 className="restaurant__name" onClick={buttonActiveHandler}>{restaurantData[props.number].name}</h2>
+                <p className="restaurant__link">{restaurantData[props.number].www}</p>
+                <h2 className="restaurant__address">{restaurantData[props.number].address}</h2>
+                <p className="restaurant__country">{restaurantData[props.number].town}, {restaurantData[props.number].country}</p>
 
-                <div className={nonActive ? "restaurant-content row non-active" : "restaurant-content row"}>
-                    <div className="restaurant-block">
-                        <div className="restaurant-block__images">
+                <ul className={nonActive ? "restaurants row non-active" : "restaurants row"}>
+                    <li className="restaurants__item">
+                        <div className="restaurants__item-image">
                             <img src={restaurantData[props.number].images_first_dish} alt="first-dish" />
                         </div>
-                        <div className="restaurant-block__info">
-                            <p>{restaurantData[props.number].first_dish}</p>
-                        </div>
-                    </div>
+                        <article className="restaurants__item-article">
+                            {restaurantData[props.number].first_dish}
+                        </article>
+                    </li>
 
-                    <div className="restaurant-block">
-                        <div className="restaurant-block__images">
+                    <li className="restaurants__item">
+                        <div className="restaurants__item-image">
                             <img src={restaurantData[props.number].images_second_dish} alt="second-dish" />
                         </div>
-                        <div className="restaurant-block__info">
-                            <p>{restaurantData[props.number].second_dish}</p>
-                        </div>
-                    </div>
+                        <article className="restaurants__item-article">
+                            {restaurantData[props.number].second_dish}
+                        </article>
+                    </li>
 
-                    <div className="restaurant-block">
-                        <div className="restaurant-block__images">
+                    <li className="restaurants__item">
+                        <div className="restaurants__item-image">
                             {restaurantData[props.number].images_third_dish ?
                                 <img src={restaurantData[props.number].images_third_dish
                                 } alt="third-dish" /> : null}
                         </div>
                         {restaurantData[props.number].third_dish ?
-                            <div className="restaurant-block__info">
+                            <article className="restaurants__item-article">
                                 <p>{restaurantData[props.number].third_dish}</p>
-                            </div> : null}
-                    </div>
+                            </article> : null}
+                    </li>
 
-                    <div className="restaurant-block">
-                        <div className="restaurant-block__images">
+                    <li className="restaurants__item">
+                        <div className="restaurants__item-image">
                             {restaurantData[props.number].images_fourth_dish ?
                                 <img src={restaurantData[props.number].images_fourth_dish
                                 } alt="fourth-dish" /> : null}
                         </div>
                         {restaurantData[props.number].fourth_dish ?
-                            <div className="restaurant-block__info">
-                                <p>{restaurantData[props.number].fourth_dish}</p>
-                            </div> : null}
-                    </div>
+                            <article className="restaurants__item-article">
+                                {restaurantData[props.number].fourth_dish}
+                            </article> : null}
+                    </li>
 
-                    <div className="restaurant-block">
-                        <div className="restaurant-block__images">
+                    <li className="restaurants__item">
+                        <div className="restaurants__item-image">
                             {restaurantData[props.number].images_fifth_dish ?
                                 <img src={restaurantData[props.number].images_fifth_dish
                                 } alt="fifth-dish" /> : null}
                         </div>
                         {restaurantData[props.number].fifth_dish ?
-                            <div className="restaurant-block__info">
-                                <p>{restaurantData[props.number].fifth_dish}</p>
-                            </div> : null}
+                            <article className="restaurants__item-article">
+                                {restaurantData[props.number].fifth_dish}
+                            </article> : null}
+                    </li>
+
+                    <div className="restaurant__footer">
+                        <article className="restaurant__footer-article">{restaurantData[props.number].text}</article>
                     </div>
 
-                    <div className="restaurant-footer__info">___
-                            <p className="restaurant-footer__info-text">{restaurantData[props.number].text}</p>
-                        <p className="restaurant-footer__symbol">_________</p>
-                    </div>
+                </ul>
 
-                </div>
             </div>
-            <Button state={nonActive} click={activeHandler} />
+            <Button state={nonActive} click={buttonActiveHandler} />
+
         </>
     )
 }

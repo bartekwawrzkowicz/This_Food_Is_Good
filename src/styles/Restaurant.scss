@@ -1,7 +1,7 @@
 @import 'mixins';
 @import 'config';
 
-.restaurant-heading {
+.restaurant {
     margin-top: 50px;
 
     @include mobile {
@@ -12,25 +12,7 @@
         margin-top: 40px;
     }
     
-    &__title,
-    &__text,
-    &__www {
-        font-size: 1.5rem;
-
-        @include mobile {
-            font-size: 1rem;
-        }
-
-        @include large-mobile {
-            font-size: 1.4rem;
-        }
-    }
-
-    &__text {
-            margin-bottom: 50px;
-        }
-
-    &__header {
+    &__name {
         color: $green-color-dark;
         font-size: 3.3rem;
         padding: 50px 0 5px 0;
@@ -54,9 +36,27 @@
         }
     }
 
-    &__www {
+    &__link {
         color: $green-color-dark;
         margin-top: -10px;
+    }
+
+    &__country {
+        margin-bottom: 50px;
+    }
+
+    &__link,
+    &__address,
+    &__country {
+        font-size: 1.5rem;
+
+        @include mobile {
+            font-size: 1rem;
+        }
+
+        @include large-mobile {
+            font-size: 1.4rem;
+        }
     }
 }
 
@@ -76,7 +76,7 @@
 
 }
 
-.restaurant-block {
+.restaurants__item {
     display: flex;
 
     @include mobile {
@@ -91,7 +91,7 @@
         display: block;
     }
 
-    &__images img {
+    &-image img {
         height: 600px;
         width: auto;
         border: 1px solid $green-color-dark;
@@ -111,7 +111,7 @@
 
     }
 
-    &__info {
+    &-article {
         font-size: 2rem;
         margin: 20% 40px;
     
@@ -132,8 +132,33 @@
     }
 }
 
-.restaurant-footer__symbol {
-    margin: 10px 0 100px auto;
+.restaurant__footer-article {
+    font-size: 2rem;
+    margin: 10px 0 30px auto;
+
+    @include mobile {
+        font-size: 1.3rem;
+    }
+
+    @include large-mobile {
+        font-size: 1.8rem;
+    }
+
+    @include netbook {
+        font-size: 1.5rem;
+    }
+}
+
+.restaurant__footer {
+
+    &::before,
+    &::after {
+        display: inline-block;
+        content: "";
+        border-top: .15rem solid $green-color-dark;
+        width: 6rem;
+        transform: translateY(-1rem);
+    }
 }
 
 .non-active {
