@@ -2,9 +2,9 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 
 import Navigation from './Navigation';
-
 import '../images/bg-image.jpeg';
 import '../styles/Header.scss';
+
 
 const Header = () => {
     return (

@@ -1,100 +1,15 @@
 @import 'mixins';
 @import 'config';
 
-.icon-column {
-    position: flex;
-    display: inline-block;
-    max-width: 300px;
-    min-height: 100px;
-    padding-bottom: 20px;
-    margin: 50px 40px 20px 40px;
-    text-align: inherit;
 
-    @include mobile {
-        padding-bottom: 0;
-        margin: 0 30px 2px 30px;
-    }
-
-    @include large-mobile {
-        padding-bottom: 10px;
-        margin: 40px 30px 5px 30px;
-    }
-
-    @include netbook {
-        padding-bottom: 10px;
-        margin: 70px 30px 5px 30px;
-    }
-
-    /* @include widescreen {
-        margin: 0;
-        padding: 0 10px 0 10px;
-    } */
+.homepage-main {
+    @include page-column
 }
 
-.icon-icons img {
-    align-self: center;
-    max-width: 5rem;
-    padding: 20px 0;
-    animation: pulse 1s infinite;
-    
-    @keyframes pulse {
-        0% {
-            transform: scale(1);
-        }
-    
-        90% {
-            transform: scale(.99);
-        }
-    
-        100% {
-            transform: scale(1);
-        }
-    }
-
-    @include mobile {
-        max-width: 2.5rem;
-        padding: 0;
-    }
-
-    @include large-mobile {
-        max-width: 3.5rem;
-    }
-
-    @include netbook {
-        max-width: 4rem;
-        padding: 20px 0;
-    }
-
-    /* @include widescreen {
-        max-width: 3rem;
-        height: auto;
-        margin: 0;
-    } */
+.homepage-main div {
+    @include page-column-div 
 }
 
-
-.icon-text {
-    display: flex;
-    font-size: 1.5rem;
-    color: $icons-green-color;
-    padding-bottom: 30px;
-
-    @include mobile {
-        font-size: 1rem;
-    }
-
-    @include large-mobile {
-        font-size: 1.2rem;
-        padding-bottom: 0;
-    }
-
-    @include netbook {
-        font-size: 1.4rem;
-        padding-bottom: 0;
-    }
-
-    /* @include widescreen {
-        font-size: 1.4rem;
-padding-bottom: 0;
-    } */
+.homepage-text {
+   @include page-text
 }
